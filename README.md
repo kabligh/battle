@@ -2,7 +2,7 @@
 
 Building a game called Battle using Sinatra, RSpec and Capybara.
 
-The basic user stories are
+It is built on the following user stories:
 
 ```
 As two Players,
