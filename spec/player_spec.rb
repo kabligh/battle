@@ -16,13 +16,6 @@ describe Player do
     end
   end
 
-  describe "#attack" do
-    it "hurts the other player" do
-      expect(luke).to receive(:receive_damage)
-      annabel.attack(luke)
-    end
-  end
-
   describe "#receive_damage" do
     it "reduces the player's HP" do
       expect { annabel.receive_damage }.to change { annabel.hit_points }.by(-10)
