@@ -19,15 +19,27 @@ describe Game do
     end
   end
 
+  describe "#current turn" do
+    it "starts with player 1" do
+      expect(game.current_turn).to eq(player_1)
+    end
+  end
+
+  describe "#switch_turn" do
+    it "switches whose turn it is" do
+      game.switch_turn
+      expect(game.current_turn).to eq(player_2)
+    end
+  end 
+end
   # describe "choose_player" do
   #   it "decides player 1 starts first" do
   #     srand(4567)
   #     expect(game.choose_player).to eq(player_1.name)
   #   end
-  # 
+  #
   #   it "decides player 2 starts first" do
   #     srand(4566)
   #     expect(game.choose_player).to eq(player_2.name)
   #   end
   # end
-end

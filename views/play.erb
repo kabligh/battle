@@ -2,10 +2,12 @@
 
 <h1>👊 BATTLE 👊</h1>
 
-<%= @game.player_2.name %>: <%= @game.player_2.hit_points %>HP
-<br>
+<%= @game.player_2.name %>: <%= @game.player_2.hit_points %> Hit Points
+<br><br>
 <form action="/attack">
   <input type="submit" value="Attack Luke">
 </form>
-<br>
-<%= @game.player_1.name %>: <%= @game.player_1.hit_points %>HP
+<br><br>
+<%= @game.player_1.name %>: <%= @game.player_1.hit_points %> Hit Points
+<br><br>
+<h3><%= @game.current_turn.name %>'s turn</h3>
