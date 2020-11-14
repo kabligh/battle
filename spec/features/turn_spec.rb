@@ -12,7 +12,7 @@ feature "switch turns" do
     scenario "after player 1 attacks" do
       sign_in_and_play
       click_button "Attack"
-      click_link "Continue game"
+      click_button "Continue game"
       expect(page).not_to have_content "Annabel's turn"
       expect(page).to have_content "Luke's turn"
     end
